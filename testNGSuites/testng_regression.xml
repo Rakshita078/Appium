@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Appium Tests" verbose="1" >
+    <test name="Android Tests" >
+        <classes>
+            <class name="Tests.AndroidECommerce" />
+        </classes>
+    </test>
+    <test name="iOS Tests">
+        <classes>
+            <class name="Tests.IOSUIKitCatalog"/>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="TestUtils.Listeners"></listener>
+    </listeners>
+</suite>
